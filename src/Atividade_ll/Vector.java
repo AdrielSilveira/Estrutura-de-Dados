@@ -5,7 +5,7 @@ public class Vector {
 	private int val = 0;
 	private Aluno alunos[];
 	
-	public void Vetor(int tam) {
+	public Vector(int tam) {
 		this.alunos = new Aluno[tam]; 
 	}
 	
@@ -18,11 +18,13 @@ public class Vector {
 	
 	public boolean contem(Aluno aluno){
 		for(int i = 0; i < val; i++) {
-			if (this.alunos[i] == ) {
-				return true;
+			if (aluno != this.alunos[i]) {
+				if (this.alunos[i].getNome().equals(aluno.getNome())) {
+					return true;
+
+				}
 			}
 		}
 		return false;
 	}
-	
 }
